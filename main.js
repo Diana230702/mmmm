@@ -65,17 +65,17 @@ function random() {
   return Math.floor(Math.random() * 80);
 }
 
-button.addEventListener("mouseenter", () => {
+button.addEventListener("click", () => {
   let top = random() + "%";
   let left = random() + "%";
   button.style.top = top;
   button.style.left = left;
 });
 
-button.addEventListener("click", () => {
-  alert("You won! You are not a gay");
-  body.style.background = "pink";
-});
+// button.addEventListener("click", () => {
+//   alert("You won! You are not a gay");
+//   body.style.background = "pink";
+// });
 button2.addEventListener("click", () => {
   alert("Congratulations!!! You are gay");
   body.style.background = "blue";
